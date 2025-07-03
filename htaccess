@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteBase /
+
+
+RewriteCond %{THE_REQUEST} //+ [NC]
+RewriteRule ^(.*)$ https://tbboys.com/$1 [R=301,L]
+
+
+RewriteCond %{HTTP_HOST} ^www\.tbboys\.com$ [NC]
+RewriteRule ^(.*)$ https://tbboys.com/$1 [L,R=301]
+
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://tbboys.com/$1 [L,R=301]
+
+
+RewriteRule ^index\.html$ https://tbboys.com/ [L,R=301]
+
+
+ErrorDocument 404 /404.html
