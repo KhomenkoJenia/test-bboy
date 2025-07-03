@@ -646,6 +646,24 @@
   .team-slider {
     position: relative;
   }
+  .news-main-tab {
+    display: none;
+  }
+  .news-tab {
+    justify-content: center;
+  }
+  .tab-container {
+    padding: 0 10px;
+  }
+  .tabs div {
+    font-size: 12px;
+    line-height: normal;
+    padding: 12px 18px 12px 18px;
+  }
+  .subtitle-blog {
+    padding: 0 25px;
+    text-align: start;
+  }
 }
 @media screen and (min-width: 427px) {
   .footer-menu a {

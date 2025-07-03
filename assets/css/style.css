@@ -1469,7 +1469,7 @@ input[type="file"] {
   margin: 4px 0 40px 0;
   color: #515151;
 }
-.blog-bottom_date {
+.blog-contant .blog-bottom_date {
   gap: 10px;
   text-align: center;
   font-family: Inter;
@@ -1614,4 +1614,107 @@ input[type="file"] {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* blog page */
+
+.subtitle-blog {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  max-width: 948px;
+  margin: 0 auto;
+}
+.blog-title {
+  text-align: center;
+}
+.tab-container {
+  width: 100%;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+.title-terms {
+  text-align: left;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.tabs {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  gap: 8px;
+  margin: 35px 0px;
+}
+
+.tabs div {
+  padding: 12px 24px 12px 24px;
+  gap: 16px;
+  border-radius: 8px;
+  color: #101010;
+  background-color: #535353;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 253, 114, 0) 20.83%,
+      rgba(0, 253, 114, 0.1) 145%
+    ),
+    #191919;
+  color: #00fd72;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.tabs div.active,
+.tabs div:hover {
+  color: #000;
+  background-color: #00fd72;
+  transition: 0.9s;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.news-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.news-main-tab {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+  padding: 24px;
+  background-color: transparent;
+  border: 1px solid #c2c2c25d;
+  border-radius: 16px;
+}
+
+.news-main-tab .main-tab-img {
+  width: 540px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+.main-tab-news-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.news-main-tab .blog__bottom {
+  margin-top: 45px;
+}
+.news-main-tab .blog__bottom_button {
+  margin-right: 292px;
 }
