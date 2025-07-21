@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "New message from $name";
     $boundary = md5(rand(0, 1000));
 
-    $headers = "From: BigBetty.io <affiliates@bigbetty.io>\r\n";
+    $headers = "From: BigBetty.io <partnership@tbboys.com>\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Return-Path: info@yourdomain.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
